@@ -39,8 +39,6 @@
         Intro.loop = true;
         Intro.play;
 
-        
-
         const playerImage = new Image();
         playerImage.src = 'Kirby.png';
 
@@ -90,7 +88,7 @@ walls.push(new Rectangulo("grey", 650, 20, 155, 100)); // Pared horizontal 2
 walls.push(new Rectangulo("grey", 650, 20, 75, 800)); // Pared horizontal 3
 walls.push(new Rectangulo("grey", 20, 700, 790, 100)); // Pared vertical 2
 
-
+//Paredes Internas del Laberinto
 walls.push(new Rectangulo("grey", 20, 150, 200, 150));
 walls.push(new Rectangulo("grey", 150, 20, 200, 300));
 walls.push(new Rectangulo("grey", 20, 200, 350, 300));
@@ -98,7 +96,6 @@ walls.push(new Rectangulo("grey", 200, 20, 350, 500));
 walls.push(new Rectangulo("grey", 20, 150, 550, 500));
 walls.push(new Rectangulo("grey", 150, 20, 550, 650));
 walls.push(new Rectangulo("grey", 20, 100, 700, 650));
-
 
 walls.push(new Rectangulo("grey", 20, 100, 100, 200));
 walls.push(new Rectangulo("grey", 100, 20, 150, 250));
@@ -145,6 +142,7 @@ walls.push(new Rectangulo("grey", 20, 80, 360, 575));
 walls.push(new Rectangulo("grey", 20, 70, 580, 750)); 
 walls.push(new Rectangulo("grey", 20, 95, 450, 515));
 walls.push(new Rectangulo("grey", 20, 150,730, 270)); 
+
 
 
 
@@ -354,6 +352,12 @@ walls.push(new Rectangulo("grey", 20, 150,730, 270));
 			ctx.fillText(" Finish ", 735,835);
             /*ctx.fillStyle = "red";
             ctx.fillRect(750, 800, 20, 20); // Salida*/
+
+            ctx.font = "35px Arial"; 
+			ctx.fillStyle="black"; 
+			ctx.fillText(" Controles: WASD ",100,850);
+
+
 
 			
                   
